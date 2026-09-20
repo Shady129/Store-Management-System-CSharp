@@ -1,0 +1,16 @@
+﻿using Domains;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BL.Contracts
+{
+    public interface IValidator<T> where T : BaseEntity, new()
+    {
+
+        bool Validate(T model);
+
+    }
+}
